@@ -94,31 +94,35 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Noclip",
    Callback = function(Value)
-      if Value then
-         -- The noclip script
-
-local runservice = game:GetService("RunService")
-
-local player = game:GetService("Players").LocalPlayer
-runservice.Stepped:Connect(function()
-    for i,v in pairs(player.Character:GetDescendants()) do
-        if v:IsA("BasePart") then
-            v.CanCollide = false
-        end
-    end
-end)
-      else
--- The noclip script
-
-local runservice = game:GetService("RunService")
-
-local player = game:GetService("Players").LocalPlayer
-runservice.Stepped:Connect(function()
-    for i,v in pairs(player.Character:GetDescendants()) do
-        if v:IsA("BasePart") then
-            v.CanCollide = true
-        end
-    end
-end)
-      end
-   end})
+if Value then
+      local player = game.Players.LocalPlayer.Character
+      player.Head.CanCollide = false
+      player.LeftFoot.CanCollide = false
+      player.LeftHand.CanCollide = false
+      player.LeftLowerArn.CanCollide = false
+      player.LeftLowerLeg.CanCollide = false
+      player.LeftUpperArm.CanCollide = false
+      player.LeftUpperLeg.CanCollide = false
+      player.LowerTorso.CanCollide = false
+      player.RightFoot.CanCollide = false
+      player.RightHand.CanCollide = false
+      player.RightLowerArm.CanCollide = false
+      player.RightLowerLeg.CanCollide = false
+      player.UpperTorso.CanCollide = false
+      player.HumanoidRootPart.CanCollide = false
+else
+   player.Head.CanCollide = true
+   player.LeftFoot.CanCollide = true
+   player.LeftHand.CanCollide = true
+   player.LeftLowerArn.CanCollide = true
+   player.LeftLowerLeg.CanCollide = true
+   player.LeftUpperArm.CanCollide = true
+   player.LeftUpperLeg.CanCollide = true
+   player.LowerTorso.CanCollide = true
+   player.RightFoot.CanCollide = true
+   player.RightHand.CanCollide = true
+   player.RightLowerArm.CanCollide = true
+   player.RightLowerLeg.CanCollide = true
+   player.UpperTorso.CanCollide = true
+   player.HumanoidRootPart.CanCollide = true
+end})
