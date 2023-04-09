@@ -125,4 +125,5 @@ else
    player.RightLowerLeg.CanCollide = true
    player.UpperTorso.CanCollide = true
    player.HumanoidRootPart.CanCollide = true
+end
 end})
