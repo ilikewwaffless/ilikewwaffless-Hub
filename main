@@ -95,9 +95,9 @@ local Toggle = Tab:CreateToggle({
    Flag = "Noclip",
    Callback = function(Value)
       if Value then
-         game.Players.LocalPlayer.Character.CanCollide = false
+         game.Players.LocalPlayer.Character.Humanoid.CanCollide = false
       else
-         game.Players.LocalPlayer.Character.CanCollide = true
+         game.Players.LocalPlayer.Character.Humanoid.CanCollide = true
       end
 end})
 
