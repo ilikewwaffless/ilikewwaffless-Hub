@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
     LoadingSubtitle = "by ilikewwaffless",
     ConfigurationSaving = {
        Enabled = true,
-       FolderName = ilikewwaffless, -- Create a custom folder for your hub/game
+       FolderName = "ilikewwaffless", -- Create a custom folder for your hub/game
        FileName = "ilikewwaffless Hub"
     },
     Discord = {
@@ -25,7 +25,7 @@ local Window = Rayfield:CreateWindow({
        Key = "9834hfgds0"
     }
  })
- local Tab = Window:CreateTab("Information", 13047175810) -- title, image
+ local Tab = Window:CreateTab("Information", 4483362458) -- title, image
  local Section = Tab:CreateSection("Main") -- section
 
  local Button = Tab:CreateButton({
@@ -42,7 +42,7 @@ local Button = Tab:CreateButton({
    end,
 })
 
- local Tab = Window:CreateTab("Character", 13047143210) -- title, image
+ local Tab = Window:CreateTab("Character", 4483362458) -- title, image
  local Section = Tab:CreateSection("Main") -- section
 
  local Slider = Tab:CreateSlider({
@@ -127,3 +127,35 @@ else
    player.HumanoidRootPart.CanCollide = true
 end
 end})
+
+local Tab = Window:CreateTab("Jailbreak", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Ice Tray",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Veriax 1.1",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/Veriax/main/Verisions/1.1/Loader.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Vynixius",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Poopdoors edited",
+   Callback = function()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+   end,
+})
