@@ -99,7 +99,7 @@ if Value then
       player.Head.CanCollide = false
       player.LeftFoot.CanCollide = false
       player.LeftHand.CanCollide = false
-      player.LeftLowerArn.CanCollide = false
+      player.LeftLowerArm.CanCollide = false
       player.LeftLowerLeg.CanCollide = false
       player.LeftUpperArm.CanCollide = false
       player.LeftUpperLeg.CanCollide = false
@@ -114,7 +114,7 @@ else
    player.Head.CanCollide = true
    player.LeftFoot.CanCollide = true
    player.LeftHand.CanCollide = true
-   player.LeftLowerArn.CanCollide = true
+   player.LeftLowerArm.CanCollide = true
    player.LeftLowerLeg.CanCollide = true
    player.LeftUpperArm.CanCollide = true
    player.LeftUpperLeg.CanCollide = true
